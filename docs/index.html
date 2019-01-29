@@ -16,6 +16,9 @@
     font-family: "Binggrae2-Bold";
     src:url("fonts/BinggraeTaom2-Bold.otf")
   }
+  .justify-content-space-evenly {
+    justify-content: space-evenly;
+  }
   .h-70vh {
     height: 70vh;
   }
@@ -37,7 +40,7 @@
     min-width: 450px;
   }
   .card {
-    width: 300px;
+    width: 330px;
     height: 500px;   
   }
   .card-img-top {
@@ -96,7 +99,7 @@
   }
   .font-bingrae-m {
     font-family: "Binggrae2";
-    font-size: 24px;
+    font-size: 26px;
   }
   .font-bingrae-m-bold {
     font-family: "Binggrae2-Bold";
@@ -104,7 +107,7 @@
   }
   .font-bingrae-sm {
     font-family: "Binggrae2";
-    font-size: 18px;
+    font-size: 20px;
   }
   .font-bingrae-ssm {
     font-family: "Binggrae2";
@@ -148,28 +151,20 @@
       font-size: 38px;
     }
     .font-bingrae-m {
-      font-size: 20px;
+      font-size: 18px;
     }
     .font-bingrae-m-bold {
       font-size: 20px;
     }
     .font-bingrae-sm {
-      font-size: 14px;
+      font-size: 16px;
     }
     .font-bingrae-ssm {
-      font-size: 11px;
+      font-size: 14px;
     }
     .circle {
       width: 170px;
       height: 170px;
-    }
-    .card {
-      width: 250px;
-      height: 400px;   
-    }
-    .card-img-top {
-      width: 250px;
-      height: 250px;
     }
   }
   @media screen and (max-width:670px) {
@@ -186,29 +181,31 @@
     .font-bingrae-lg-bold {
       font-size: 30px;
     }
-    .font-bingrae-m {
-      font-size: 16px;
-    }
-    .font-bingrae-m-bold {
+    .font-bingrae-m{
       font-size: 18px;
     }
+    .font-bingrae-m-bold {
+      font-size: 20px;
+    }
     .font-bingrae-sm {
-      font-size: 13px;
+      font-size: 16px;
     }
     .font-bingrae-ssm {
-      font-size: 10px;
+      font-size: 14px;
     }
     .circle {
       width: 150px;
       height: 150px;
     }
-    .card {
-      width: 250px;
-      height: 400px;   
+    .float{
+      width:160px;
+      height:160px;
+      bottom:60px;
+      right:60px;
     }
-    .card-img-top {
-      width: 250px;
-      height: 250px;
+    .float-edit {
+      width: 80px;
+      height: 80px; 
     }
   }
 </style>
@@ -280,7 +277,7 @@
         <span class="p-4 font-bingrae-xlg">진행방식</span>
         <div class="single-line"></div>
       </div>
-      <div class="d-flex flex-wrap px-3 justify-content-center">
+      <div class="d-flex flex-wrap px-3 justify-content-space-evenly">
         <div class="px-4 py-3">
           <div class="card">
             <img src="images/book.png" class="card-img-top p-5" alt="...">
