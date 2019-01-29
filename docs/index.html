@@ -1,12 +1,346 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>Dudaji Server Developer Training Program</title>
+  <meta charset="UTF-8">
+  <title>Dudaji Server Developer Training Program</title>
+  <link rel="shortcut icon" href="images/favicon_dudaji.ico">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 </head>
 
-<body>
-  Hello DSY!
-</body>
+<style>
+  @font-face {
+    font-family: "Binggrae2";
+    src:url("fonts/BinggraeTaom2.otf")
+  }
+  @font-face {
+    font-family: "Binggrae2-Bold";
+    src:url("fonts/BinggraeTaom2-Bold.otf")
+  }
+  .h-70vh {
+    height: 70vh;
+  }
+  .single-line {
+    border: 1px solid black;
+    border-width: 0px 0px 1px 0px;
+    height: 1px;
+    margin-right: 5%;
+    flex: 1;
+  }
+  .white-box {
+    background-color: #FFFFFFA0;
+    height: 100%;
+  }
+  .white-box-outline {
+    height: 100%;
+    width: 100%;
+    max-width: 1100px;
+    min-width: 450px;
+  }
+  .card {
+    width: 300px;
+    height: 500px;   
+  }
+  .card-img-top {
+    width: 300px;
+    height: 300px;
+  }
+  .card-body {
+    height: 150px;
+  }
+  .footer {
+    width: 100%;
+    height: 60px;
+    background-color: black;
+    color: white;
+  }
+  .week {
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 48px;
+  }
+  .circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 7px solid;
+    width: 200px;
+    height: 200px;
+  }
+  .border-yellow {
+    border-color: #FEC011;
+  }
+  .border-green {
+    border-color: #70AD47;
+  }
+  .border-blue {
+    border-color: #0270C0;
+  }
+  .about {
+    background-image: url(images/bg_apply.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 5%;
+  }
+  .font-bingrae-xlg {
+    font-family: "Binggrae2";
+    font-size: 64px;
+  }
+  .font-bingrae-lg {
+    font-family: "Binggrae2";
+    font-size: 42px;
+  }
+  .font-bingrae-lg-bold {
+    font-family: "Binggrae2-Bold";
+    font-size: 46px;
+  }
+  .font-bingrae-m {
+    font-family: "Binggrae2";
+    font-size: 24px;
+  }
+  .font-bingrae-m-bold {
+    font-family: "Binggrae2-Bold";
+    font-size: 24px;
+  }
+  .font-bingrae-sm {
+    font-family: "Binggrae2";
+    font-size: 18px;
+  }
+  .font-bingrae-ssm {
+    font-family: "Binggrae2";
+    font-size: 12px;
+  }
 
+  .float{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:fixed;
+    width:120px;
+    height:120px;
+    bottom:40px;
+    right:40px;
+    background-color:#9DA9FF;
+    border-radius:50%;
+    text-align:center;
+    box-shadow: 2px 2px 3px #00000090;
+    z-index: 1;
+  }
+  .float-edit {
+    width: 60px;
+    height: 60px; 
+    margin-left:10px; 
+    margin-bottom: 5px;
+  }
+
+  @media screen and (min-width: 671px)and (max-width:800px) {
+    .about {
+      padding: 7%;
+      background-size: cover;
+    }
+    .font-bingrae-xlg {
+      font-size: 50px;
+    }
+    .font-bingrae-lg {
+      font-size: 34px;
+    }
+    .font-bingrae-lg-bold {
+      font-size: 38px;
+    }
+    .font-bingrae-m {
+      font-size: 20px;
+    }
+    .font-bingrae-m-bold {
+      font-size: 20px;
+    }
+    .font-bingrae-sm {
+      font-size: 14px;
+    }
+    .font-bingrae-ssm {
+      font-size: 11px;
+    }
+    .circle {
+      width: 170px;
+      height: 170px;
+    }
+    .card {
+      width: 250px;
+      height: 400px;   
+    }
+    .card-img-top {
+      width: 250px;
+      height: 250px;
+    }
+  }
+  @media screen and (max-width:670px) {
+    .about {
+      padding: 9%;
+      background-size: cover;
+    }
+    .font-bingrae-xlg {
+      font-size: 50px;
+    }
+    .font-bingrae-lg {
+      font-size: 28px;
+    }
+    .font-bingrae-lg-bold {
+      font-size: 30px;
+    }
+    .font-bingrae-m {
+      font-size: 16px;
+    }
+    .font-bingrae-m-bold {
+      font-size: 18px;
+    }
+    .font-bingrae-sm {
+      font-size: 13px;
+    }
+    .font-bingrae-ssm {
+      font-size: 10px;
+    }
+    .circle {
+      width: 150px;
+      height: 150px;
+    }
+    .card {
+      width: 250px;
+      height: 400px;   
+    }
+    .card-img-top {
+      width: 250px;
+      height: 250px;
+    }
+  }
+</style>
+
+<body>
+  <a href="https://goo.gl/forms/mKJsNLczMIYaHFMB2" class="float" target="_blank">
+    <img src="images/edit.svg" alt="edit" class="float-edit">
+  </a>
+  <div class="about h-70vh d-flex flex-column justify-content-center align-items-center mb-5">
+    <div class="text-center white-box-outline">
+      <div class="d-flex flex-column justify-content-center white-box">
+        <p class="font-bingrae-lg-bold pb-5 font-weight-bold">
+          두다지 서버개발자 양성 프로그램<br>
+          DSA 과정 스터디원 모집중<br>
+        </p>
+        <div class="font-bingrae-m">
+          <p>일정: 2019년 2월 7일 ~ 2월 28일</p>
+          <p>장소: 수내역~서현역 인근 예정</p>
+          <p>비용: 20만원 (완주 시 10만원 환급)</p>
+        </div>
+      </div>
+      <p class="text-right font-bingrae-ssm pr-2">*DSA: Data Structure and Algorithm</p>
+    </div>
+  </div>
+
+  <div class="study-flow px-4 mb-5">
+    <div>
+      <div class="d-flex align-items-center">
+        <span class="p-4 font-bingrae-xlg">커리큘럼</span>
+        <div class="single-line"></div>
+      </div>
+      <div class="week d-flex align-items-center">
+        <div class="circle mr-5 border-yellow">
+          <span class="font-bingrae-lg">1주차</span>
+        </div>
+        <div>
+          <ul class="m-0 font-bingrae-m">
+            <li>TDD, 유닛테스트</li>
+            <li>시간복잡도 계산법</li>
+            <li>정렬 구현1 (버블, 선택, 삽입)</li>
+          </ul>
+        </div>
+      </div>
+      <div class="week d-flex align-items-center">
+        <div class="circle mr-5 border-green">
+          <span class="font-bingrae-lg">2주차</span>
+        </div>
+        <div>
+          <ul class="m-0 font-bingrae-m">
+            <li>정렬 구현2 (합병, 퀵)</li>
+            <li>우선순위 큐 구현</li>
+          </ul>
+        </div>
+      </div>
+      <div class="week d-flex align-items-center">
+        <div class="circle mr-5 border-blue">
+          <span class="font-bingrae-lg">3주차</span>
+        </div>
+        <div>
+          <ul class="m-0 font-bingrae-m">
+            <li>해시테이블 구현1 (Open address)</li>
+            <li>해시테이블 구현2 (Chaining)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="d-flex align-items-center">
+        <span class="p-4 font-bingrae-xlg">진행방식</span>
+        <div class="single-line"></div>
+      </div>
+      <div class="d-flex flex-wrap px-3 justify-content-center">
+        <div class="px-4 py-3">
+          <div class="card">
+            <img src="images/book.png" class="card-img-top p-5" alt="...">
+            <hr/>
+            <div class="card-body">
+              <h5 class="card-title font-bingrae-m-bold">Step 1</h5>
+              <p class="card-text font-bingrae-sm">제공되는 레퍼런스를 통해<br/>1주일간 학습</p>
+            </div>
+          </div>
+        </div>
+        <div class="px-4 py-3">
+          <div class="card">
+            <img src="images/qa.png" class="card-img-top p-5" alt="...">
+            <hr/>
+            <div class="card-body">
+              <h5 class="card-title font-bingrae-m-bold">Step 2</h5>
+              <p class="card-text font-bingrae-sm">학습기간동안 자유롭게 질문<br/>(채팅 / 화상 / 원격)</p>
+            </div>
+          </div>
+        </div>
+        <div class="px-4 py-3">
+          <div class="card">
+            <img src="images/fire.png" class="card-img-top p-5" alt="...">
+            <hr/>
+            <div class="card-body">
+              <h5 class="card-title font-bingrae-m-bold">Step 3</h5>
+              <p class="card-text font-bingrae-sm">매주 수요일까지 과제제출</p>
+            </div>
+          </div>
+        </div>
+        <div class="px-4 py-3">
+          <div class="card">
+            <img src="images/discussion.png" class="card-img-top p-5" alt="...">
+            <hr/>
+            <div class="card-body">
+              <h5 class="card-title font-bingrae-m-bold">Step 4</h5>
+              <p class="card-text font-bingrae-sm">매주 목요일 2시 오프라인 미팅<br/>(학습내용 점검 및 리뷰)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="etc px-4 mb-5">
+    <div class="d-flex align-items-center">
+      <span class="p-4 font-bingrae-xlg">안내사항</span>
+      <div class="single-line"></div>
+    </div>
+    <div class="px-5">
+      <ul class="font-bingrae-sm">
+        <li>기본 사용언어는 python이며, 다른 언어를 사용해도 무방합니다.</li>
+        <li>python으로 하고싶은데 잘 모른다면 이메일로 문의주세요. 사전에 학습할 수 있는 자료를 드립니다.</li>
+        <li>과제제출은 github을 이용합니다. git 사용법을 모르더라도 괜찮아요. 첫 미팅 때 간단하게 알려드려요!</li>
+        <li>에디터는 사용하시는 언어에 맞춰 자유롭게 사용하시면 됩니다.</li>
+        <li>문의: shhong@dudaji.com</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer font-bingrae-ssm d-flex justify-content-center align-items-center font-weight-lighter">
+    <span>Copyright © Dudaji Corp</span>
+  </div>
+</body>
 </html>
