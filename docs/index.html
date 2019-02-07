@@ -5,6 +5,10 @@
   <title>Dudaji Server Developer Training Program</title>
   <link rel="shortcut icon" href="images/favicon_dudaji.ico">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script> 
 </head>
 
 <style>
@@ -43,15 +47,18 @@
     max-width: 1100px;
     min-width: 450px;
   }
-  .card {
+  .step-card {
     width: 250px;
+    border-radius: 10px;
+    border: 1px solid #eee;
   }
-  .card-img-top {
+  .step-card-img-top {
     width: 250px;
     height: 250px;
   }
-  .card-body {
+  .step-card-body {
     height: 230px;
+    padding: 1.25rem;
   }
   .footer {
     width: 100%;
@@ -171,7 +178,7 @@
       width: 170px;
       height: 170px;
     }
-    .card {
+    .step-card {
       width: 250px;
     }
     .card-img-top {
@@ -209,7 +216,7 @@
       width: 150px;
       height: 150px;
     }
-    .card {
+    .step-card {
       width: 300px;
     }
     .card-img-top {
@@ -243,18 +250,19 @@
     <d class="text-center white-box-outline">
       <d class="d-flex flex-column justify-content-center white-box">
         <div class="pb-5">
-          <span class="font-bingrae-lg-bold">현직 개발자가 알려주는</span>
+          <span class="font-bingrae-lg-bold">두다지 프로그래밍 클럽</span>
           <div class="">
             <span class="font-bingrae-lg-bold">DSA 과정 스터디원 모집</span>
             <span class="font-bingrae-sm"><br>*DSA: Data Structure and Algorithm</span>
           </div>
         </div>
         <div class="font-bingrae-m">
-          <p>일정: 2019년 2월 9일 ~ 2월 28일</p>
-          <p>(첫 미팅 토요일 2시 / 이후 매주 목요일 2시, 총 4회)</p>
+          <p>일정: 2019년 3월 7일 ~ 3월 28일</p>
+          <p>(매주 목요일 2시, 총 4회)</p>
           <p>장소: 강남역 인근 스터디룸 예정</p>
-          <p>비용: 20만원 (완주 시 10만원 환급)</p>
-          <p>모집인원: 5명 (선착순, 조기마감 가능)</p>
+          <p>비용: 20만원</p>
+          <p>(완주 시 10만원 환급, 친구 동반 등록시 10% 할인)</p>
+          <p>모집인원: 5명</p>
         </div>
       </d>
       <p class="text-right font-bingrae-ssm pr-2"></p>
@@ -264,19 +272,131 @@
   <div class="study-flow px-4 mb-5">
     <div>
       <div class="d-flex align-items-center">
-        <span class="p-4 font-bingrae-xlg">모집대상</span>
+        <span class="p-4 font-bingrae-xlg">두다지 프로그래밍 클럽?</span>
         <div class="single-line"></div>
       </div>
-      <div class="px-5">
+      <div class="px-5 mb-5">
         <ul class="font-bingrae-m">
-          <li>자료구조에 대한 기초가 부족하다고 느껴지는 대학생/취준생</li>
-          <li>혼자 공부하면 재미도 없고 지속적으로 잘 안되는 분</li>
+          <li>(주)두다지에서 진행하는 개발자 양성 프로그램</li>
+          <li>초보개발자들에게 일주일 단위로 과제를 주고 코드리뷰를 진행하며 좋은 개발자가 될 수 있도록 도와줍니다.</li>
+        </ul>
+      </div>
+      <div class="d-flex align-items-center">
+        <span class="p-4 font-bingrae-xlg">이런 분들 환영합니다</span>
+        <div class="single-line"></div>
+      </div>
+      <div class="px-5 mb-5">
+        <ul class="font-bingrae-m">
+          <li>기초가 부족하다고 느껴지는 대학생/취준생</li>
+          <li>혼자 공부하면 지속적으로 잘 안되는 분</li>
           <li>학습 가이드라인과 피드백이 필요한 분</li>
         </ul>
       </div>
       <div class="d-flex align-items-center">
         <span class="p-4 font-bingrae-xlg">커리큘럼</span>
         <div class="single-line"></div>
+      </div>
+      <div class="px-5 mb-4">
+        <span class="font-bingrae-lg">[DSA 과정 일정]</span>
+        <!-- <div class="accordion" id="accordionExample">
+            <div class="card">
+              <div class="card-header" id="headingOne">
+                <span>
+                  <button class="btn btn-link font-bingrae-m" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    DSA
+                  </button>
+                </span>
+              </div>
+              <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                <div class="card-body">
+                  <ul class="font-bingrae-sm">
+                    <li>TDD, 유닛테스트</li>
+                    <li>시간복잡도</li>
+                    <li>정렬 알고리즘(버블, 선택, 삽입, 합병, 퀵)</li>
+                    <li>자료구조 구현(스택, 큐, 우선순위큐, 해시테이블)</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingTwo">
+                <span class="mb-0">
+                  <button class="btn btn-link font-bingrae-m collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" disabled>
+                    CA
+                  </button>
+                </span>
+              </div>
+              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                <div class="card-body">
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingThree">
+                <span class="mb-0">
+                  <button class="btn btn-link font-bingrae-m collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" disabled>
+                    OS
+                  </button>
+                </span>
+              </div>
+              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                <div class="card-body">
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="heading4">
+                <span class="mb-0">
+                  <button class="btn btn-link font-bingrae-m collapsed" type="button" data-toggle="collapse" data-target="#collapse4" aria-expanded="false" aria-controls="collapse4" disabled>
+                    Network
+                  </button>
+                </span>
+              </div>
+              <div id="collapseThree" class="collapse" aria-labelledby="heading4" data-parent="#accordionExample">
+                <div class="card-body">
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="heading5">
+                <span class="mb-0">
+                  <button class="btn btn-link font-bingrae-m collapsed" type="button" data-toggle="collapse" data-target="#collapse5" aria-expanded="false" aria-controls="collapse5" disabled>
+                    System Programing
+                  </button>
+                </span>
+              </div>
+              <div id="collapseThree" class="collapse" aria-labelledby="heading5" data-parent="#accordionExample">
+                <div class="card-body">
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="heading6">
+                <span class="mb-0">
+                  <button class="btn btn-link font-bingrae-m collapsed" type="button" data-toggle="collapse" data-target="#collapse6" aria-expanded="false" aria-controls="collapse6" disabled>
+                    Version Control (Git)
+                  </button>
+                </span>
+              </div>
+              <div id="collapseThree" class="collapse" aria-labelledby="heading6" data-parent="#accordionExample">
+                <div class="card-body">
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="heading7">
+                <span class="mb-0">
+                  <button class="btn btn-link font-bingrae-m collapsed" type="button" data-toggle="collapse" data-target="#collapse7" aria-expanded="false" aria-controls="collapse7" disabled>
+                    Design Pattern & Refactoring
+                  </button>
+                </span>
+              </div>
+              <div id="collapseThree" class="collapse" aria-labelledby="heading7" data-parent="#accordionExample">
+                <div class="card-body">
+                </div>
+              </div>
+            </div>
+        </div> -->
       </div>
       <div class="week d-flex align-items-center">
         <div class="circle mr-5 border-yellow">
@@ -313,6 +433,19 @@
           </ul>
         </div>
       </div>
+      <div class="px-5 mb-5">
+        <span class="font-bingrae-lg">[개발자 100일 성장 프로젝트 전체목록]</span>
+        <ul class="font-bingrae-m">
+          <li>DSA</li>
+          <li>CA</li>
+          <li>OS & Network</li>
+          <li>System Programing</li>
+          <li>Version Control(Git)</li>
+          <li>Design Pattern & Refactoring</li>
+          <li>Linux</li>
+          <li>Code Complete</li>
+        </ul>
+      </div>
     </div>
     <div>
       <div class="d-flex align-items-center">
@@ -322,50 +455,94 @@
       <div class="d-flex flex-wrap px-3">
         <div class="d-flex justify-content-space-evenly flex-1">
           <div class="px-4 py-3">
-            <div class="card">
+            <div class="step-card">
               <img src="images/book.png" class="card-img-top p-5" alt="...">
               <hr/>
-              <div class="card-body">
-                <h5 class="card-title font-bingrae-m-bold">Step 1</h5>
-                <p class="card-text font-bingrae-sm">제공되는 레퍼런스를 통해 일주일간 학습합니다. 레퍼런스는 아래 링크를 통해 자세히 볼 수 있습니다.</p>
-                <p class="card-test font-bingrae-sm"><a href="http://bitly.kr/3UAaS" target="_blank">http://bitly.kr/3UAaS</a></p>
+              <div class="step-card-body">
+                <h5 class="step-card-title font-bingrae-m-bold">Step 1</h5>
+                <p class="step-card-text font-bingrae-sm">제공되는 레퍼런스를 통해 일주일간 학습합니다. 레퍼런스는 아래 링크를 통해 자세히 볼 수 있습니다.</p>
+                <p class="step-card-test font-bingrae-sm"><a href="http://bitly.kr/3UAaS" target="_blank">http://bitly.kr/3UAaS</a></p>
               </div>
             </div>
           </div>
           <div class="px-4 py-3">
-            <div class="card">
+            <div class="step-card">
               <img src="images/qa.png" class="card-img-top p-5" alt="...">
               <hr/>
-              <div class="card-body">
-                <h5 class="card-title font-bingrae-m-bold">Step 2</h5>
-                <p class="card-text font-bingrae-sm">학습기간동안 자유롭게 질문하고 채팅 / 화상 / 원격 등을 통해 답변을 받을 수 있습니다.</p>
+              <div class="step-card-body">
+                <h5 class="step-card-title font-bingrae-m-bold">Step 2</h5>
+                <p class="step-card-text font-bingrae-sm">학습기간동안 자유롭게 질문하고 채팅 / 화상 / 원격 등을 통해 답변을 받을 수 있습니다.</p>
               </div>
             </div>
           </div>
         </div>
         <div class="d-flex justify-content-space-evenly flex-1">
           <div class="px-4 py-3">
-            <div class="card">
+            <div class="step-card">
               <img src="images/fire.png" class="card-img-top p-5" alt="...">
               <hr/>
-              <div class="card-body">
-                <h5 class="card-title font-bingrae-m-bold">Step 3</h5>
-                <p class="card-text font-bingrae-sm">매주 수요일까지 과제를 제출합니다. 과제는 연습문제풀이, 코드구현 등으로 구성됩니다.</p>
+              <div class="step-card-body">
+                <h5 class="step-card-title font-bingrae-m-bold">Step 3</h5>
+                <p class="step-card-text font-bingrae-sm">매주 과제를 제출합니다. 과제는 연습문제풀이, 코드구현 등으로 구성됩니다.</p>
               </div>
             </div>
           </div>
           <div class="px-4 py-3">
-            <div class="card">
+            <div class="step-card">
               <img src="images/discussion.png" class="card-img-top p-5" alt="...">
               <hr/>
-              <div class="card-body">
-                <h5 class="card-title font-bingrae-m-bold">Step 4</h5>
-                <p class="card-text font-bingrae-sm">학습내용에 대해 현직 개발자로부터 코드리뷰 및 피드백이 이루어집니다.</p>
+              <div class="step-card-body">
+                <h5 class="step-card-title font-bingrae-m-bold">Step 4</h5>
+                <p class="step-card-text font-bingrae-sm">학습내용에 대해 현직 개발자로부터 코드리뷰 및 피드백이 이루어집니다.</p>
               </div>
             </div>
           </div>
         </div>
       </div>
+    </div>
+  </div>
+  <div class="mento px-4 mb-5">
+    <div class="d-flex align-items-center">
+      <span class="p-4 font-bingrae-xlg">멘토</span>
+      <div class="single-line"></div>
+    </div>
+    <div class="px-5 font-bingrae-lg">
+      <p>홍석환</p>
+      <ul class="font-bingrae-m mb-4">
+        <li><span style="font-family: none">現</span> 스타트업 대표</li>
+        <li>카이스트 전산학 졸업</li>
+        <li>컴퓨터시스템응용기술사</li>
+        <li><span style="font-family: none">前</span> 넥슨 게임개발팀</li>
+        <li><span style="font-family: none">前</span> KB투자증권 데이터분석팀</li>
+      </ul>
+      <p>권순재</p>
+      <ul class="font-bingrae-m mb-4">
+        <li><span style="font-family: none">現</span> 스타트업 개발자</li>
+        <li>인천대학교 컴퓨터공학과 졸업</li>
+        <li>인천대학교 파이썬 & 라즈베리파이 특강 2018 EDISON 진행</li>
+      </ul>
+    </div>
+  </div>
+  <div class="review px-4 mb-5">
+    <div class="d-flex align-items-center">
+      <span class="p-4 font-bingrae-xlg">후기</span>
+      <div class="single-line"></div>
+    </div>
+    <div class="px-5 font-bingrae-lg">
+      <p>사례1) 김종민(인천대 컴퓨터공학과, 라인/NHN/삼성전자 최종합격)</p>
+      <ul class="font-bingrae-m mb-4">
+        <li>신입개발자에게 필요한것은 단순히 전산지식을 얼마나 많이 아느냐가 아니라, 내가 앞으로 개발하면서 그동안 공부 했던 전산지식을 바탕으로 얼마나 잘 이해하며 활용할 수 있는지 그 능력이 필요하다고 생각합니다. 두다지 교육 프로그램은 그 능력을 키울 수 있도록 방향을 잡아주었습니다.</li>
+        <li><a href="https://jongmin92.github.io/2017/12/14/Etc/prepare-for-employment/">https://jongmin92.github.io/2017/12/14/Etc/prepare-for-employment/</a></li>
+      </ul>
+      <p>사례2) 유용탁(한양대 정보시스템공학과, <span style="font-family: none">現</span> 두다지 개발 팀장)</p>
+      <ul class="font-bingrae-m mb-4">
+        <li>혹시나 했는데 정말 알차고 개념정리가 쏙쏙 됩니다. 입소문이 퍼져서 많은 사람들에게 도움이 되기를 바랍니다. 어떻게 감사의 말씀을 드려야할지..</li>
+        <li><a href="https://github.com/huhuta/dudaji">https://github.com/huhuta/dudaji</a></li>
+      </ul>
+      <p>사례3) 허훈(한국외대 프랑스어학과)</p>
+      <ul class="font-bingrae-m mb-4">
+        <li><a href="https://goo.gl/xuEvGP">https://goo.gl/xuEvGP</a></li>
+      </ul>
     </div>
   </div>
   <div class="etc px-4 mb-5">
@@ -374,7 +551,7 @@
       <div class="single-line"></div>
     </div>
     <div class="px-5">
-      <ul class="font-bingrae-sm">
+      <ul class="font-bingrae-m">
         <li>스터디는 약 2시간동안 진행될 예정입니다.</li>
         <li>스터디 진행과 관련된 상세내용은 신청 시 작성한 이메일 및 문자로 안내됩니다.</li>
         <li>해당 스터디는 Python을 기준으로 진행됩니다.</li>
