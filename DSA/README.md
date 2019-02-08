@@ -75,9 +75,10 @@
 
 [Mocking 알아보기 with Python](https://blog.leop0ld.org/posts/about-mocking/)
 
-<!-- [change verbosity](https://til.chann.kr/python/unit_test)
+[python unittest 공식문서](https://docs.python.org/3/library/unittest.html#skipping-tests-and-expected-failures)
 
-[python unittest 공식문서](https://docs.python.org/3/library/unittest.html#skipping-tests-and-expected-failures) -->
+<!-- [change verbosity](https://til.chann.kr/python/unit_test) -->
+
 
 
 
@@ -87,17 +88,38 @@
 
 [버블정렬](https://www.youtube.com/watch?v=YbsQiiubO74)
 
+[버블정렬 연습문제](https://www.acmicpc.net/problem/1517)
+
 [선택정렬](https://www.youtube.com/watch?v=uCUu3fF5Dws)
+
+[선택정렬 연습문제](https://www.acmicpc.net/problem/1427)
 
 [삽입정렬](https://www.youtube.com/watch?v=SZVugP81J1A)
 
+[삽입정렬 연습문제](https://www.acmicpc.net/problem/2750)
+
 [병합정렬](https://www.youtube.com/watch?v=QAyl79dCO_k)
+
+[병합정렬 연습문제](https://www.acmicpc.net/problem/2751)
 
 [퀵정렬](https://www.youtube.com/watch?v=7BDzle2n47c)
 
+[퀵정렬 연습문제](https://www.acmicpc.net/problem/11931)
+
 <br>
 
-### 기본 데이터 구조 이해 (배열, 리스트, 스택, 큐, 맵, 우선순위큐)
+### 기본 데이터 구조 이해 (리스트, 스택, 큐, 우선순위큐, 해시테이블)
+
+[리스트 5분만에 이해하기](https://www.youtube.com/watch?v=ycCKnNMLIUw)
+
+[초보몽키의 개발공부로그 - 리스트](https://wayhome25.github.io/cs/2017/04/17/cs-19/)
+
+[초보몽키의 개발공부로그 - 스택](https://wayhome25.github.io/cs/2017/04/17/cs-19/)
+
+[초보몽키의 개발공부로그 - 큐](https://wayhome25.github.io/cs/2017/04/17/cs-19/)
+
+[초보몽키의 개발공부로그 - 트리/힙](https://wayhome25.github.io/cs/2017/04/17/cs-19/)
+
 
 <br>
 
