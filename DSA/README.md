@@ -49,10 +49,6 @@
 
 <br>
 
-### 기본 데이터 구조 이해 (배열, 리스트, 스택, 큐, 맵, 우선순위큐)
-
-<br>
-
 ### TDD(Test-driven Development)
 
 [(점프투자바) 테스트 주도 개발](https://wikidocs.net/224)
@@ -75,13 +71,15 @@
 
 [Python Tutorial: Unit Testing Your Code with the unittest Module](https://www.youtube.com/watch?v=6tNS--WetLI)
 
-[python unittest 공식문서](https://docs.python.org/3/library/unittest.html#skipping-tests-and-expected-failures)
+[Python unittest.TestCase 실행 순서](http://code.i-harness.com/ko-kr/q/523423)
 
 [Mocking 알아보기 with Python](https://blog.leop0ld.org/posts/about-mocking/)
 
-[change verbosity](https://til.chann.kr/python/unit_test)
+<!-- [change verbosity](https://til.chann.kr/python/unit_test)
 
-[Python unittest.TestCase 실행 순서](http://code.i-harness.com/ko-kr/q/523423)
+[python unittest 공식문서](https://docs.python.org/3/library/unittest.html#skipping-tests-and-expected-failures) -->
+
+
 
 <br>
 
@@ -96,6 +94,10 @@
 [병합정렬](https://www.youtube.com/watch?v=QAyl79dCO_k)
 
 [퀵정렬](https://www.youtube.com/watch?v=7BDzle2n47c)
+
+<br>
+
+### 기본 데이터 구조 이해 (배열, 리스트, 스택, 큐, 맵, 우선순위큐)
 
 <br>
 
