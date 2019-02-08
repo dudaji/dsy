@@ -100,23 +100,13 @@
 
 [버블정렬](https://www.youtube.com/watch?v=YbsQiiubO74)
 
-[버블정렬 연습문제](https://www.acmicpc.net/problem/1517)
-
 [선택정렬](https://www.youtube.com/watch?v=uCUu3fF5Dws)
-
-[선택정렬 연습문제](https://www.acmicpc.net/problem/1427)
 
 [삽입정렬](https://www.youtube.com/watch?v=SZVugP81J1A)
 
-[삽입정렬 연습문제](https://www.acmicpc.net/problem/2750)
-
 [병합정렬](https://www.youtube.com/watch?v=QAyl79dCO_k)
 
-[병합정렬 연습문제](https://www.acmicpc.net/problem/2751)
-
 [퀵정렬](https://www.youtube.com/watch?v=7BDzle2n47c)
-
-[퀵정렬 연습문제](https://www.acmicpc.net/problem/11931)
 
 <br>
 
