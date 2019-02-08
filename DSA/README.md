@@ -1,5 +1,7 @@
 # DSA(Data Structure and Algorithm)
 
+<br>
+
 ## 평가기준
 - 기본적인 데이터구조의 복잡도를 정확히 이해하고 있음
 - 해시테이블, 우선순위큐를 구현해봄
@@ -30,6 +32,8 @@
 
 ### 자료구조와 알고리즘은 왜 공부해야 하는가?
 
+학습목표: 가볍게 읽어보시면 됩니다
+
 [프로그래밍을 잘하는 5가지 방법 — 1. 자료구조와 알고리즘 공부하기](https://medium.com/@ghilbut/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%EC%9D%84-%EC%9E%98%ED%95%98%EB%8A%94-5%EA%B0%80%EC%A7%80-%EB%B0%A9%EB%B2%95-1-%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%EC%99%80-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EA%B3%B5%EB%B6%80%ED%95%98%EA%B8%B0-ebf3a3f79ee2
 )
 
@@ -38,6 +42,8 @@
 <br>
 
 ### 시간복잡도에 대한 이해
+
+학습목표: 코드를 보고 시간복잡도를 계산할 수 있다
 
 [O(n), O(nlogn) 이런거 대체 무슨 뜻일까요?](https://www.youtube.com/watch?v=Y7KTRu6-XK0)
 
@@ -50,6 +56,8 @@
 <br>
 
 ### TDD(Test-driven Development)
+
+학습목표: 가볍게 읽어보시면 됩니다
 
 [(점프투자바) 테스트 주도 개발](https://wikidocs.net/224)
 
@@ -66,6 +74,8 @@
 <br>
 
 ### 유닛테스트
+
+학습목표: 작성한 함수에 대해 테스트를 할 수 있다
 
 [(파이썬 - 기본을 갈고 닦자!) unittest ](https://wikidocs.net/16107)
 
@@ -85,6 +95,8 @@
 <br>
 
 ### 정렬 알고리즘
+
+학습목표: 정렬 알고리즘에 대해 이해하고 구현할 수 있다
 
 [버블정렬](https://www.youtube.com/watch?v=YbsQiiubO74)
 
@@ -110,7 +122,9 @@
 
 ### 기본 데이터 구조 이해 (리스트, 스택, 큐, 우선순위큐, 해시테이블)
 
-[리스트 5분만에 이해하기](https://www.youtube.com/watch?v=ycCKnNMLIUw)
+학습목표: 데이터 구조에 대해 이해하고 구현할 수 있다
+
+[리스트 5분만에 이해하기](https://www.yotube.com/watch?v=ycCKnNMLIUw)
 
 [초보몽키의 개발공부로그 - 리스트](https://wayhome25.github.io/cs/2017/04/17/cs-19/)
 
