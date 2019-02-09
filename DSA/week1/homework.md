@@ -151,27 +151,3 @@ def func(n, a=1, b=2):
   선택: https://www.acmicpc.net/problem/2750
 
   삽입: https://www.acmicpc.net/problem/1427
-
-  합병: https://www.acmicpc.net/problem/2751
-
-  퀵: https://www.acmicpc.net/problem/11931
-
-<br>
-
-## 자료구조
-
-#### 1. 유닛테스트를 통해 아래 테스트 케이스 검증
-
-해시테이블
-
-- 저장되어 있지 않는 키값에 대한 참조
-- 3개의 원소 삽입 후 삽입한 원소 중 1개 참조
-- 3개의 원소가 삽입된 상태에서 4개의 원소 삭제
-- 일정 개수 이상의 삽입 (resizing 검증)
-
-우선순위큐
-
-- 비어있는 우선순위큐에 대한 삭제(pop)
-- 3개의 원소 삽입 후 1개 삭제(pop)
-- 3개의 원소가 삽입된 상태에서 4개의 원소 삭제
-- 배열을 사용한 경우 일정 개수 이상의 삽입 (resizing 검증)
