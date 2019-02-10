@@ -8,4 +8,5 @@ def sort(arg):
             array[j + 1] = array[j]
             j -= 1
         array[j + 1] = tmp
+        print array
     return array
