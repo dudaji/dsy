@@ -1,5 +1,5 @@
 import unittest
-import zh_sort
+import sort
 
 class TestSort(unittest.TestCase):
     def setUp(self):
@@ -22,17 +22,17 @@ class TestSort(unittest.TestCase):
 
     def test_bubble(self):
         for array in self.test_array:
-            self.assertEqual(zh_sort.sort_bubble_start(array), sorted(array))
+            self.assertEqual(sort.sort_bubble_start(array), sorted(array))
 
 
     def test_insertion(self):
         for array in self.test_array:
-            self.assertEqual(zh_sort.sort_insert(array), sorted(array))
+            self.assertEqual(sort.sort_insert(array), sorted(array))
 
 
     def test_selection(self):
         for array in self.test_array:
-            self.assertEqual(zh_sort.sort_select(array), sorted(array))
+            self.assertEqual(sort.sort_select(array), sorted(array))
 
 
 unittest.main()

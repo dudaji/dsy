@@ -57,7 +57,7 @@ def sort_insert(arr):
       if arr[j] > arr[tar_index]:
         arr[tar_index], arr[j] = arr[j], arr[tar_index]
         tar_index = j
-        print arr
+        # print arr
       j -= 1
 
   return arr
