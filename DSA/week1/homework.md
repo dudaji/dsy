@@ -121,10 +121,6 @@ def func(n, a=1, b=2):
 
 * [] => []
 
-#### 2. 버블정렬을 이용하여 문제풀이
-
-* https://www.acmicpc.net/problem/1517
-
 <br>
 
 ### 선택정렬
