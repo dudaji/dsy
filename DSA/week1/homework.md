@@ -9,7 +9,7 @@
 #### 1. 다음 Big-O 표기법에 대하여 대소비교를 하시오. 
 
 ```
-O(n), O(1), O(2^n), o(logn), O(n^2), O(10^n), O(n!), O(nlogn), O(n^10)
+O(n), O(1), O(2^n), O(logn), O(n^2), O(10^n), O(n!), O(nlogn), O(n^10)
 ```
 
 #### 2. 다음 함수들에 대하여 시간복잡도를 Big-O 표기법으로 표현하시오.
@@ -75,23 +75,12 @@ def func(data, x):
 
 ```python
 def func(n):
-    ret = 0
-    for i in range(n):
-        for j in range(i, n, i + 1):
-            ret += 1
-    return ret
-```
-
-**2-7)**
-
-```python
-def func(n):
     if n <= 0:
         return 1
     return func(n - 1) + func(n - 1)
 ```
 
-**2-8)**
+**2-7)**
 
 ```python
 def func(n, a=1, b=2):
@@ -131,10 +120,6 @@ def func(n, a=1, b=2):
 * [2, 10] => [2, 10]
 
 * [] => []
-
-#### 2. 버블정렬을 이용하여 문제풀이
-
-* https://www.acmicpc.net/problem/1517
 
 <br>
 
