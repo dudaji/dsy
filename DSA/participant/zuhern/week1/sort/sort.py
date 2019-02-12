@@ -49,15 +49,18 @@ def sort_select(arr):
 
 def sort_insert(arr):
 
-  arr_size = len(arr)
+  arr_size = len(arr) - 1
+
   for i in range(arr_size):
-    j = i - 1
-    tar_index = i
-    while j > -1:
-      if arr[j] > arr[tar_index]:
-        arr[tar_index], arr[j] = arr[j], arr[tar_index]
-        tar_index = j
-        # print arr
+    
+    start_index = i + 1
+    tar_val = arr[start_index]
+    j = start_index
+
+    while j > 0 and tar_val < arr[j-1]:
+      arr[j] = arr[j-1]
       j -= 1
 
+    arr[j] = tar_val
+    
   return arr
