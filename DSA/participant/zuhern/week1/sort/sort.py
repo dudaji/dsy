@@ -7,19 +7,16 @@
 
 def sort_bubble_start(arr):
   
-  # print arr
   return sort_bubble(arr, len(arr))
 
 def sort_bubble(arr, arr_size):
 
   if arr_size < 2:
-    # print arr
     return arr
 
   for i in range(arr_size-1):
     if arr[i] > arr[i + 1]:
       arr[i], arr[i + 1] = arr[i + 1], arr[i]
-    # print arr 
 
   return sort_bubble(arr, arr_size-1)
 
@@ -27,7 +24,6 @@ def sort_bubble(arr, arr_size):
 
 def sort_select(arr):
   
-  # print arr
   arr_size = len(arr)
 
   for i in range(arr_size):
@@ -42,8 +38,6 @@ def sort_select(arr):
     if i != min_index:
       arr[i], arr[min_index] = arr[min_index], arr[i]
     
-    # print arr
-
   return arr
 
 
