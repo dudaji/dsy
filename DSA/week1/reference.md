@@ -51,6 +51,8 @@
 
 [(파이썬 - 기본을 갈고 닦자!) unittest ](https://wikidocs.net/16107)
 
+[Python 테스트 시작하기](https://www.slideshare.net/hosunglee948/python-52222334)
+
 [Python Tutorial: Unit Testing Your Code with the unittest Module](https://www.youtube.com/watch?v=6tNS--WetLI)
 
 [Python unittest.TestCase 실행 순서](http://code.i-harness.com/ko-kr/q/523423)
