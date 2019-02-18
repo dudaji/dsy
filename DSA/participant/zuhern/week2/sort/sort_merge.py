@@ -35,7 +35,6 @@ def merge(sort_arr, start_index, mid_index, end_index):
   back_index = 0
 
   tar_index = start_index
-
   while front_index < len(front_arr) and back_index < len(back_arr):
 
     front_val = front_arr[front_index]
@@ -57,9 +56,9 @@ def merge(sort_arr, start_index, mid_index, end_index):
   if (front_index != len(front_arr)) :
     sort_arr[tar_index:end_index+1] = front_arr[front_index:len(front_arr)]
 
-  # print(
-  #   "sorted", sort_arr,
-  #   "start_index", start_index,
-  #   "mid_index", mid_index,
-  #   "end_index", end_index,
-  # )
+  print(
+    "sorted", sort_arr,
+    "start_index", start_index,
+    "mid_index", mid_index,
+    "end_index", end_index,
+  )

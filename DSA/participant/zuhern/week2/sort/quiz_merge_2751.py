@@ -3,11 +3,11 @@
 import sys
 sys.setrecursionlimit(1000000)
 
-n = int(input())
+n = int(sys.stdin.readline().strip())
 arr = []
 
 for _ in range(0, n):
-  arr.append(int(input()))
+  arr.append(int(sys.stdin.readline().strip()))
 
 ######################################################################
 
