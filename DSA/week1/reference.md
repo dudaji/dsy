@@ -51,6 +51,8 @@
 
 [(파이썬 - 기본을 갈고 닦자!) unittest ](https://wikidocs.net/16107)
 
+[Python 테스트 시작하기](https://www.slideshare.net/hosunglee948/python-52222334)
+
 [Python Tutorial: Unit Testing Your Code with the unittest Module](https://www.youtube.com/watch?v=6tNS--WetLI)
 
 [Python unittest.TestCase 실행 순서](http://code.i-harness.com/ko-kr/q/523423)
@@ -70,8 +72,25 @@
 
 학습목표: 정렬 알고리즘에 대해 이해하고 구현할 수 있다
 
-[버블정렬](https://www.youtube.com/watch?v=YbsQiiubO74)
+#### 버블정렬
 
-[선택정렬](https://www.youtube.com/watch?v=uCUu3fF5Dws)
+[버블정렬(Bubble Sort) 자바로 구현하기](https://www.youtube.com/watch?v=YbsQiiubO74)
 
-[삽입정렬](https://www.youtube.com/watch?v=SZVugP81J1A)
+#### 선택정렬
+
+[선택정렬(Selection Sort) 자바로 구현하기](https://www.youtube.com/watch?v=uCUu3fF5Dws)
+
+#### 삽입정렬
+
+[중간바보도 배우는 알고리즘 - 삽입정렬](https://www.youtube.com/watch?v=SZVugP81J1A)
+
+<br>
+
+### 추가자료
+
+[get/set 속성값과 프로퍼티(property)](https://whatisthenext.tistory.com/115)
+
+[Python 매개변수 self 와 cls의 차이 그리고 static method에 대해서](https://paphopu.tistory.com/entry/Python-%EB%A7%A4%EA%B0%9C%EB%B3%80%EC%88%98-self-%EC%99%80-cls%EC%9D%98-%EC%B0%A8%EC%9D%B4-%EA%B7%B8%EB%A6%AC%EA%B3%A0-static-method%EC%97%90-%EB%8C%80%ED%95%B4%EC%84%9C)
+
+[정적메소드 @classmethod와 @staticmethod의 정리](https://suwoni-codelab.com/python%20%EA%B8%B0%EB%B3%B8/2018/03/11/Python-Basic-class-staticmethod/)
+
