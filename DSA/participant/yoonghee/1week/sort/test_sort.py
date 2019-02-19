@@ -2,6 +2,8 @@ import unittest
 import bubble_sort
 import insertion_sort
 import selection_sort
+import merge_sort
+import quick_sort
 
 class TestSort(unittest.TestCase):
     def setUp(self):
@@ -36,5 +38,14 @@ class TestSort(unittest.TestCase):
         for array in self.test_array:
             self.assertEqual(selection_sort.sort(array), sorted(array))
 
+
+    def test_merge(self):
+        for array in self.test_array:
+            self.assertEqual(merge_sort.sort(array), sorted(array))
+
+
+    def test_quick(self):
+        for array in self.test_array:
+            self.assertEqual(quick_sort.sort(array), sorted(array))
 
 unittest.main()
