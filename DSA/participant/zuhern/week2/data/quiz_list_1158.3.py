@@ -1,3 +1,4 @@
+# array 로 구현
 import sys
 
 cnt, gap = map(int, sys.stdin.readline().strip().split())

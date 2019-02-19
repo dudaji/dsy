@@ -1,3 +1,4 @@
+# LinkedList 에서 delete를 주어진 값만큼 건너 뛰어서 함
 import sys
 
 class Node:
