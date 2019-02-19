@@ -1,3 +1,4 @@
+# LinkedList 에서 delete를 현재 current 값만 함
 import sys
 
 class Node:
