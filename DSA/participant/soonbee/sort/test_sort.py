@@ -37,6 +37,14 @@ class TestSort(unittest.TestCase):
             selection_sort.sort(arr)
             self.assertEqual(arr, sorted(arr))
 
+    def test_merge(self):
+        for arr in self.test_arr:
+            self.assertEqual(merge_sort.sort(arr), sorted(arr))
+
+    def test_quick(self):
+        for arr in self.test_arr:
+            quick_sort.sort(arr)
+            self.assertEqual(arr, sorted(arr))
 
 
 if __name__ == "__main__":
