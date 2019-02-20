@@ -1,10 +1,6 @@
 import random
 
-def sort(arr):
-  quick(arr, 0, len(arr)-1)
-
-
-def quick(arr, s, e):
+def type_a(arr, s, e):
     # Base case
     if s >= e:
         return
@@ -26,5 +22,48 @@ def quick(arr, s, e):
             break
         arr[i], arr[j] = arr[j], arr[i]
     arr[s], arr[j] = arr[j], arr[s] # Move pivot to middle
-    quick(arr, s, j-1)
-    quick(arr, j+1, e)
+    type_a(arr, s, j-1)
+    type_a(arr, j+1, e)
+
+
+def type_b(arr):
+    # Base case
+    if len(arr) <= 1:
+        return arr
+
+    left, mid, right = [], [], []
+    pivot = arr[0]
+
+    # Sorting
+    for element in arr:
+        if element < pivot:
+            left.append(element)
+        elif element > pivot:
+            right.append(element)
+        else:
+            mid.append(element)
+    
+    return type_b(left) + mid + type_b(right)
+
+
+def type_c(arr, s, e):
+    # Base case
+    if s >= e:
+        return
+    
+    # Sorting
+    # less than pivot, place on the left side of the wall
+    # position => | less elements | wall | greater elements | unsorted items | pivot |
+    # wall is first element in greater elements
+    # end of the iteration, swap pivot with wall
+    # position after iteration => | less elements | pivot | greater elements | unsorted items | wall |
+    pivot = arr[e]
+    wall = s
+    for i in range(s, e):
+        if arr[i] < pivot:
+            arr[i], arr[wall] = arr[wall], arr[i]
+            wall += 1
+    arr[wall], arr[e] = arr[e], arr[wall]
+    type_c(arr, s, wall-1)
+    type_c(arr, wall+1, e)
+        

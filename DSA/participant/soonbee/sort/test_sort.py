@@ -41,9 +41,18 @@ class TestSort(unittest.TestCase):
         for arr in self.test_arr:
             self.assertEqual(merge_sort.sort(arr), sorted(arr))
 
-    def test_quick(self):
+    def test_quick_type_a(self):
         for arr in self.test_arr:
-            quick_sort.sort(arr)
+            quick_sort.type_a(arr, 0, len(arr)-1)
+            self.assertEqual(arr, sorted(arr))
+    
+    def test_quick_type_b(self):
+        for arr in self.test_arr:
+            self.assertEqual(quick_sort.type_b(arr), sorted(arr))
+    
+    def test_quick_type_c(self):
+        for arr in self.test_arr:
+            quick_sort.type_c(arr, 0, len(arr)-1)
             self.assertEqual(arr, sorted(arr))
 
 
