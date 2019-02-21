@@ -16,8 +16,8 @@ class Stack(list):
 
     def show(self):
         data = str()
-        while s:
-            data += s.pop()
+        while self:
+            data += self.pop()
         stdout.write(data + "\n")
 
 if __name__=="__main__":
