@@ -7,7 +7,13 @@ merge하면서 값을 비교하여 정렬 하므로 최대 n번 정도의 복잡
 quick_sort pivot값 잘 골랐을 때와 같은 성능을 나타내고
 임시로 저장할 공간을 못쓸 때는 quick_sort를 사용합니다.
 time complexity : O(nlogn)
+
+백준에서 compile했을 때 에러남
 '''
+import sys
+from sys import stdin
+sys.setrecursionlimit(1500)
+
 def merge_sort(arr):
     if len(arr) <= 1:
         return arr
@@ -36,3 +42,13 @@ def merge(left, right):
 
 def sort(arr):
     return merge_sort(arr)
+
+'''
+arr = []
+N = int(stdin.readline())
+for x in range(N):
+    arr.append(int(stdin.readline()))
+
+for y in sort(arr):
+    print(y)
+'''

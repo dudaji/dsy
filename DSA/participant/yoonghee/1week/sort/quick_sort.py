@@ -6,6 +6,10 @@ partition이 왼쪽 오른쪽 하나씩 남을때 비교 정렬하면서 반환
 보통 nlogn의 복잡도를 가지는데 그 이유는 BST처럼 나누어 검색 결과가 줄어들기 때문 입니다.
 time complexity : O(nlogn)
 '''
+import sys
+from sys import stdin
+sys.setrecursionlimit(1500)
+
 def quick_sort(arr):
     left, right, pivot = [], [], []
     if len(arr) <= 1:
@@ -18,13 +22,17 @@ def quick_sort(arr):
             right.append(x)
         else:
             pivot.append(x)
-            
-    #print("left", left)
-    #print("right", right)
-    #print("pivot", pivot)
-
+        
     return quick_sort(left) + pivot + quick_sort(right)
-
+    
 
 def sort(arr):
     return quick_sort(arr)
+
+arr = []
+N = int(stdin.readline())
+for x in range(N):
+    arr.append(int(stdin.readline()))
+
+for y in sort(arr):
+    print(y)
