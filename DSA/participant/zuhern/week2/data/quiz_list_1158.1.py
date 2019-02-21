@@ -79,16 +79,10 @@ linked_list = LinkedList()
 for i in range(1, cnt+1):
   linked_list.insert(str(i))
 
-result = '<'
- 
+result_list = []
 while not linked_list.listCount() == 0 :
   for i in range(gap-1):
     linked_list.getNext()
-
-  result += str(linked_list.deleteCurrent().data)
-  if not linked_list.listCount() == 0:
-      result += ', '
-  else:
-      result += '>'
- 
-sys.stdout.write(result)
+  result_list.append(str(linked_list.deleteCurrent().data))
+result = ", ".join(map(str, result_list))
+sys.stdout.write("<{}>".format(result))

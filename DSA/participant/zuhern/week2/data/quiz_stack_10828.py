@@ -7,18 +7,18 @@ import sys
 class ArrayStack():
 
   def __init__(self):
-    self.stack = {}
+    self.data = {}
     self.last = 0
 
   def push(self, data):
     self.last += 1 
-    self.stack[self.last] = data
+    self.data[self.last] = data
 
   def pop(self):
     if (self.last == 0):
       return -1
 
-    return_data = self.stack[self.last]
+    return_data = self.data[self.last]
     self.last -= 1 
     return return_data
 
@@ -31,7 +31,7 @@ class ArrayStack():
   def top(self):    
     if (self.last == 0):
       return -1
-    return_data = self.stack[self.last]
+    return_data = self.data[self.last]
     return -1 if self.empty() else return_data
 
 
