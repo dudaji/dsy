@@ -5,11 +5,14 @@
 
 import sys
 
-input_str = str(sys.stdin.readline().strip())
-while input_str != "***":
+def printReverse(input_str):
   str_arr = list(input_str)
   result = ""
   while not len(str_arr) == 0:
     result += str(str_arr.pop())
   print(result)
+
+input_str = str(sys.stdin.readline().strip())
+while input_str != "***":
+  printReverse(input_str)
   input_str = str(sys.stdin.readline().strip())

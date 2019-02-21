@@ -1,4 +1,5 @@
 # https://www.acmicpc.net/problem/11931
+# 시간 초과
 
 import sys
 sys.setrecursionlimit(1000000)
