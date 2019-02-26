@@ -130,6 +130,8 @@ https://docs.python.org/3/library/collections.html#collections.deque
 
 구현 예제
 
+https://www.youtube.com/watch?v=t0Cq6tVNRBA
+
 [초보몽키의 개발공부로그 - 트리/힙](https://wayhome25.github.io/cs/2017/04/19/cs-23/)
 
 https://github.com/huhuta/dudaji/blob/develop/data-structure/heap/heap_practice.py
