@@ -18,6 +18,7 @@ def merge_sort(arr):
     if len(arr) <= 1:
         return arr
 
+    pivot = len(arr)//2
     left = merge_sort(arr[:len(arr)//2])
     right = merge_sort(arr[len(arr)//2:])
     return merge(left, right)
@@ -39,6 +40,7 @@ def merge(left, right):
     temp += right[r_idx:]
 
     return temp
+
 
 def sort(arr):
     return merge_sort(arr)

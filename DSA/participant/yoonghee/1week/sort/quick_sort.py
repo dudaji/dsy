@@ -5,6 +5,11 @@ partition이 왼쪽 오른쪽 하나씩 남을때 비교 정렬하면서 반환
 최악의 경우 pivot이 partition을 너무 많이 나누면 n^2의 복잡도를 가지고
 보통 nlogn의 복잡도를 가지는데 그 이유는 BST처럼 나누어 검색 결과가 줄어들기 때문 입니다.
 time complexity : O(nlogn)
+
+성능개선
+
+pivot 랜덤값 or 중위값 -> 최악의 경우를 회피
+insertion -> 성능개선
 '''
 import sys
 from sys import stdin
