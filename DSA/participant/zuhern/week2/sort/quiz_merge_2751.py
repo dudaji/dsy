@@ -54,6 +54,7 @@ def merge(sort_arr, start_index, mid_index, end_index):
     tar_index += 1
 
   if (front_index != len(front_arr)) :
+    ## 이부분 시간이 오래 걸림 바꿔야함
     sort_arr[tar_index:end_index+1] = front_arr[front_index:len(front_arr)]
 
 
