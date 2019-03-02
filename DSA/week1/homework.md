@@ -57,6 +57,7 @@ def func(n):
 **2-5)**
 
 ```python
+# data의 길이를 n이라고 가정
 def func(data, x):
     lo = 0
     hi = len(data)
