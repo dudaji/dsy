@@ -8,7 +8,7 @@
 O(n), O(1), O(2^n), O(logn), O(n^2), O(10^n), O(n!), O(nlogn), O(n^10)
 ```
 
-O(1) < (logn) < O(n)< O(nlogn)< O(n^2) < O(n^10) < O(2^n) < O(10^n) < O(n!)
+$O(1) < (logn) < O(n)< O(nlogn)< O(n^2) < O(n^10) < O(2^n) < O(10^n) < O(n!)$
 
 #### 2. 다음 함수들에 대하여 시간복잡도를 Big-O 표기법으로 표현하시오.
 
@@ -20,7 +20,7 @@ def func(n):
     return n
 ```
 
-정답: O(1)
+정답: $O(1)$
 
 **2-2)**
 
@@ -32,7 +32,7 @@ def func(n):
     return retn
 ```
 
-정답: O(n)
+정답: $O(n)$
 
 **2-3)**
 
@@ -45,7 +45,7 @@ def func(n):
     return ret
 ```
 
-정답: O(n^2)
+정답: $O(n^2)$
 
 **2-4)**
 
@@ -58,11 +58,12 @@ def func(n):
     return ret
 ```
 
-정답: O(n^2)
+정답: $O(n^2)$
 
 **2-5)**
 
 ```python
+# data의 길이를 n이라고 가정
 def func(data, x):
     lo = 0
     hi = len(data)
@@ -77,7 +78,7 @@ def func(data, x):
     return None
 ```
 
-정답: O(logn)
+정답: $O(logn)$
 
 **2-6)**
 
@@ -88,7 +89,7 @@ def func(n):
     return func(n - 1) + func(n - 1)
 ```
 
-정답: O(n^2)
+정답: $O(n^2)$
 
 **2-7)**
 
@@ -103,6 +104,7 @@ def func(n, a=1, b=2):
     func(n - 1, c, b)
 ```
 
-정답: O(n^2)
+정답: $O(n^2)$
 
 <br>
+

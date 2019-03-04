@@ -1,11 +1,8 @@
-def sort(arg):
-    array = arg[:]
-    n = len(array)
-    for i in range(n):
-        tmp = array[i]
+def sort(arr):
+    for i in range(len(arr)):
+        cursor = arr[i]
         j = i - 1
-        while j > -1 and array[j] > tmp:
-            array[j + 1] = array[j]
+        while j > -1 and arr[j] > cursor:
+            arr[j + 1] = arr[j]
             j -= 1
-        array[j + 1] = tmp
-    return array
+        arr[j + 1] = cursor
