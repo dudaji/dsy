@@ -38,11 +38,14 @@ class TestHashTable(unittest.TestCase):
 
   def test_03_expand(self):
     push = self.ht.push
-    self.assertEqual(self.ht.capacity, 11)
+    self.assertEqual(self.ht.capacity, 10)
     push("tomato", 101)
     push("pear", 102)
     push("peach", 103)
-    self.assertEqual(self.ht.capacity, 17)
+    push("another", 104)
+    push("other", 105)
+    push("something", 106)
+    self.assertEqual(self.ht.capacity, 15)
 
   def test_04_modify(self):
     push = self.ht.push
@@ -64,4 +67,3 @@ class TestHashTable(unittest.TestCase):
 
 if __name__ == "__main__":
   unittest.main()
-

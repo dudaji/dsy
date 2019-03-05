@@ -48,13 +48,13 @@ class HashTable:
     index = self._hashing(key) % self.capacity
     for i, e in enumerate(self.table[index]):
       if key == e[0]:
-        ret = self.table[index][i]
+        ret =  e[1]
         del self.table[index][i]
         return ret
     raise(KeyError(key))
 
   def peek(self, key):
     index = self._hashing(key) % self.capacity
-    for idx, e in enumerate(self.table[index]):
+    for e in self.table[index]:
       if key == e[0]:
-        return self.table[index][idx]
+        return e[1]
